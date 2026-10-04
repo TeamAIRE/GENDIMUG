@@ -56,11 +56,14 @@ Additional python packages:
 Basic Usage
 
 	Python command line:
+	
 	python3 gendimug.py 
+	
 
 	Main parameters
 	-gff [PATH TO GFF3 ANNOTATION FILE] 
 	-fna [PATH TO FASTA GENOME SEQUENCE FILE] 
+	
 
 	Optional parameters:
 
