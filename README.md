@@ -26,6 +26,8 @@ Cis-Spatial Edges	Sequential, Overlap, Nested, Identical.
 Trans-Spatial Edges	Sequential, Overlap, Nested, Reverse-Complementary.
 Hierarchical Edges	Ontogenetic (Parent -> Child).
 
+
+
 GenDiMug workflow (complete network)
 
 1.	Feature collection & inference
@@ -40,6 +42,7 @@ Computes spatial relationships between features on the same and opposite strands
 Features of the same type with the same genomic positions are represented by a single node. Nested DNA repeats are removed.
 
 
+
 Quick Start
 
 Requirements
@@ -49,7 +52,6 @@ Additional python packages:
 •	Intervaltree (https://github.com/chaimleib/intervaltree,   https://pypi.org/project/intervaltree/)
 •	BioPython (https://biopython.org/,    https://pypi.org/project/biopython/)
 •	Networkx (https://networkx.org/,    https://pypi.org/project/networkx/)
-
 
 Basic Usage
 
@@ -98,6 +100,7 @@ Each element in the generated graph carries rich metadata:
 •	Nodes: Include original GFF3 data, computed local GC content, and a list of genomic position intervals (handling fragmentation).
 
 
+
 Simplified networks
 
 5 options are available using the –simplify parameter :
@@ -109,11 +112,15 @@ o	(3) Spatial genome features network without children features, with a gene-onl
 o	(4) Gene-only spatial network without children features (no additional features)
 o	(5) Ontogenetic network only (redundant features are kept)
 
+
+
 Curation data for protein motifs/domains
 
 When importing protein motifs or domains from InterproScan, the script attempts to map domains to their encoding genomic positions. Discrepancies between protein and CDS sequences can lead to failure of mapping some domains, which will be captured in a supplementary ‘unmapped domains’ output directory.
 
 Additionally, the script checks that mapped domain genomic positions add up to a length that is a multiple of 3, and captures any domain that fails that check in the ‘domains_of_length_not_multiple_of_3’ supplementary output directory, with exception data( e.g. “ribosomal slippage”, “low quality sequence”…), if available in the CDS attributes in the genomic annotation file.
+
+
 
 Network visualization
 
