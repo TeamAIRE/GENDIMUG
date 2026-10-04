@@ -53,14 +53,14 @@ Additional python packages:
 
 Basic Usage
 
-Python command line:
-python3 gendimug.py 
+	Python command line:
+	python3 gendimug.py 
 
-Main parameters
--gff [PATH TO GFF3 ANNOTATION FILE] 
--fna [PATH TO FASTA GENOME SEQUENCE FILE] 
+	Main parameters
+	-gff [PATH TO GFF3 ANNOTATION FILE] 
+	-fna [PATH TO FASTA GENOME SEQUENCE FILE] 
 
-Optional parameters:
+	Optional parameters:
 
 	Optional features input
 	-cus , --path_custom_gffs [PATH TO INPUT CUSTOM GFF3 FORMAT FEATURE FILE]
@@ -82,10 +82,10 @@ Optional parameters:
 	-gen, --generate_gff: when used, generates GFF3 annotation files for inferred features
 	
 	Optional filters
--only, --only_contig [CONTIG IDS LIST, comma-separated] : Build network only for the indicated contigs
--start, --start [CUTOFF START POSITION] : Cutoff start position for all selected contigs
--end, --end [CUTOFF END POSITION] : Cutoff end position for all selected contigs
--filt, --filter [PATH TO A TEXT FILE LISTING FEATURE TYPES TO EXCLUDE FROM THE NETWORK]
+	-only, --only_contig [CONTIG IDS LIST, comma-separated] : Build network only for the indicated contigs
+	-start, --start [CUTOFF START POSITION] : Cutoff start position for all selected contigs
+	-end, --end [CUTOFF END POSITION] : Cutoff end position for all selected contigs
+	-filt, --filter [PATH TO A TEXT FILE LISTING FEATURE TYPES TO EXCLUDE FROM THE NETWORK]
 
 
 Output files
